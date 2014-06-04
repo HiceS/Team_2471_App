@@ -56,6 +56,12 @@ public class MainScreen extends ActionBarActivity implements
 				.beginTransaction()
 				.replace(R.id.container,
 						PlaceholderFragment.newInstance(position + 1)).commit();
+		switch (position) {
+		case 1:
+			Fragment Sponsor = new Fragment();
+		case 2:
+			Fragment Robot = new Fragment();
+		}
 	}
 
 	public void onSectionAttached(int number) {
