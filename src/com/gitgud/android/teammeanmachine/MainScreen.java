@@ -51,17 +51,22 @@ public class MainScreen extends ActionBarActivity implements
 	@Override
 	public void onNavigationDrawerItemSelected(int position) {
 		// update the main content by replacing fragments
+		Fragment fragment = new main_screen();
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager
-				.beginTransaction()
-				.replace(R.id.container,
-						PlaceholderFragment.newInstance(position + 1)).commit();
 		switch (position) {
 		case 1:
-			Fragment Sponsor = new Fragment();
+			fragment = new main_screen();
+			break;
 		case 2:
-			Fragment Robot = new Fragment();
+			fragment = new Sponsor();
+			break;
+		case 3:
+			fragment = new Robot();
+			break;
 		}
+		fragmentManager.beginTransaction()
+        .replace(R.id.container, fragment)
+        .commit();
 	}
 
 	public void onSectionAttached(int number) {
