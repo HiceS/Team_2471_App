@@ -9,5 +9,26 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">nothing yet!</string>
     <string name="action_settings">Settings</string>
+    <string name="robot_specs">
+Frame:
+&#x0a;
+Low center of gravity
+&#x0a;
+Drivetrain:
+&#x0a;
+Swerve Drive
+&#x0a;
+Intake:
+&#x0a;
+Double roller intake from claw
+&#x0a;
+Shooter:
+&#x0a;
+90 degree shooter
+Can score in any goal
+Shoots over truss
+Can catch truss shots
+
+</string>
 
 </resources>

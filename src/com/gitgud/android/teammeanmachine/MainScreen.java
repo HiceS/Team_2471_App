@@ -54,14 +54,14 @@ public class MainScreen extends ActionBarActivity implements
 		Fragment fragment = new main_screen();
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		switch (position) {
-		case 1:
+		case 0:
 			fragment = new main_screen();
+			break;
+		case 1:
+			fragment = new Robot();
 			break;
 		case 2:
 			fragment = new Sponsor();
-			break;
-		case 3:
-			fragment = new Robot();
 			break;
 		}
 		fragmentManager.beginTransaction()
